@@ -1,0 +1,6 @@
+{
+	"name": "StartupChannel",
+	"description": "Always start discord in a specific channel",
+	"author": "Animal",
+	"version": "1.0.0"
+}
