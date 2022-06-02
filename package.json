@@ -25,6 +25,8 @@
       "esbuild-windows-64": "^0.14.21"
    },
    "dependencies": {
-      "enmity": "*"
+      "@rollup/plugin-json": "^4.1.0",
+      "enmity": "*",
+      "typescript": "^4.7.2"
    }
 }

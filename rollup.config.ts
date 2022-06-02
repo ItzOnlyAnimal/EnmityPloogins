@@ -2,6 +2,7 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import { defineConfig, Plugin } from 'rollup';
 import esbuild from 'rollup-plugin-esbuild';
+import json from '@rollup/plugin-json'
 
 import { basename } from 'path';
 import { writeFileSync } from 'fs';
@@ -20,6 +21,7 @@ export default defineConfig({
    plugins: [
       nodeResolve(),
       commonjs(),
+      json(),
       esbuild({ minify: true, target: 'ES2019' }),
       createPluginJson(),
    ]

@@ -1,0 +1,11 @@
+{
+    "name": "StartupChannel",
+    "description": "Go to your desired channel on startup",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Animal",
+            "id": "118437263754395652"
+        }
+    ]
+}
