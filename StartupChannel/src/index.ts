@@ -7,8 +7,6 @@ import { getSettingsPanel } from './lol';
 let tc = getByProps('transitionToChannel');
 
 const StartupChannel: Plugin = {
-   ...Manifest,
-
    onStart() {
       setTimeout(() => {
          let channel = get('StartupChannel', 'startupChannel');
@@ -19,6 +17,8 @@ const StartupChannel: Plugin = {
    onStop() { },
 
    getSettingsPanel: getSettingsPanel,
+
+   ...Manifest
 };
 
 registerPlugin(StartupChannel);

@@ -1,6 +1,6 @@
 {
-  "name": "startup-channel",
-  "description": "Always start discord in a specific channel",
+  "name": "plugin",
+  "description": "dn",
   "version": "1.0.0",
   "author": {
     "name": "Animal"

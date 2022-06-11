@@ -20,7 +20,7 @@ specifiers:
 
 dependencies:
   '@rollup/plugin-json': 4.1.0_rollup@2.75.5
-  enmity: 1.1.9
+  enmity: 1.2.0
   typescript: 4.7.2
 
 optionalDependencies:
@@ -444,8 +444,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /enmity/1.1.9:
-    resolution: {integrity: sha512-LSEXzYA3YIwkXyajqa/uLmfg2Ek7ICTGbrScNK6KyEWKGhEwQvtqgwXB72lunBlUBOKjAfL1LTuCnIrIIFvf4Q==}
+  /enmity/1.2.0:
+    resolution: {integrity: sha512-OTb0t2xD2HA5eONcLk3IsPXJdxPhnKuTk4k1BRBZIlOnsg7sP35681Ti+nrMgnGNE/hXSSsmAU6P6x9ldHbKvw==}
     dev: false
 
   /es-module-lexer/0.9.3:
