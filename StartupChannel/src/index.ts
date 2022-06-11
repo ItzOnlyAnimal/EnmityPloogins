@@ -4,17 +4,21 @@ import { get } from 'enmity/api/settings'
 import Manifest from './manifest.json'
 import { getSettingsPanel } from './lol';
 
-const Channels = getByProps('transitionToChannel');
+let tc = getByProps('transitionToChannel');
 
 const StartupChannel: Plugin = {
-    ...Manifest,
+   ...Manifest,
 
    onStart() {
-      Channels.transitionToChannel(get('startupChannel', 'q'));
+      setTimeout(() => {
+         let channel = get('StartupChannel', 'startupChannel');
+         console.log('channel: ' + channel);
+         if (channel != 0) tc.transitionToChannel(channel)
+      }, 100);
    },
-   onStop() {},
+   onStop() { },
 
-   getSettingsPanel: getSettingsPanel, 
+   getSettingsPanel: getSettingsPanel,
 };
 
 registerPlugin(StartupChannel);

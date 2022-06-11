@@ -1,7 +1,8 @@
 {
     "name": "StartupChannel",
-    "description": "Go to your desired channel on startup",
-    "version": "1.0.0",
+    "description": "Go to a desired channel on startup",
+    "version": "1.0.1",
+    "color": "#a9b7ee",
     "authors": [
         {
             "name": "Animal",
