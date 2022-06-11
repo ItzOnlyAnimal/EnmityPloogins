@@ -27,7 +27,6 @@
   },
   "dependencies": {
     "@rollup/plugin-json": "^4.1.0",
-    "enmity": "^1.2.0",
-    "enmity-api": "github:enmity-mod/enmity-api"
+    "enmity": "^1.2.0"
   }
 }
