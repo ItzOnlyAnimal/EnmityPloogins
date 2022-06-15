@@ -1,0 +1,12 @@
+{
+    "name": "Auto Server Notifs",
+    "description": "Auto apply settings when joining a server",
+    "version": "0.0.2",
+    "color": "#ffc74d",
+    "authors": [
+        {
+            "name": "Animal",
+            "id": "118437263754395652"
+        }
+    ]
+}
