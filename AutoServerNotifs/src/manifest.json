@@ -1,7 +1,7 @@
 {
     "name": "Auto Server Notifs",
     "description": "Auto apply settings when joining a server",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "color": "#ffc74d",
     "authors": [
         {

@@ -1,30 +1,33 @@
-import { FormInput, FormRow, FormSection, FormSwitch } from "enmity/components";
+import { FormInput, FormRow, FormSection, FormSwitch, View } from "enmity/components";
 import { React } from "enmity/metro/common";
 
 export function getSettingsPanel({ settings }) {
-    return <FormSection>
-        <FormRow
-            label='Mute Server'
-            trailing={<FormSwitch
-                value={settings.getBoolean('muted', false)}
-                onValueChange={() => {
-                    settings.toggle('muted', false);
-                }}
-            />}
-        />
-        <FormRow
-            label='Change Nickname'
-            trailing={<FormSwitch
-                value={settings.getBoolean('changeNick', false)}
-                onValueChange={() => {
-                    settings.toggle('changeNick', false);
-                }}
-            />}
-        />
-        {settings.getBoolean('changeNick', false) && <FormInput
-            value={settings.get('nickname', ' ')}
-            onChange={(s: string) => settings.set("nickname", s)}
-            title="Nickname to set" />}
+    return <View>
+        <FormSection>
+            <FormRow
+                label='Mute Server'
+                trailing={<FormSwitch
+                    value={settings.getBoolean('muted', false)}
+                    onValueChange={() => {
+                        settings.toggle('muted', false);
+                    }}
+                />}
+            />
+            <FormRow
+                label='Change Nickname'
+                trailing={<FormSwitch
+                    value={settings.getBoolean('changeNick', false)}
+                    onValueChange={() => {
+                        settings.toggle('changeNick', false);
+                    }}
+                />}
+            />
+            {settings.getBoolean('changeNick', false) && <FormInput
+                value={settings.get('nickname', ' ')}
+                onChange={(s: string) => settings.set("nickname", s)}
+                title="Nickname to set" />}
+        </FormSection>
+
         <FormSection title="Server Notification Settings">
             <FormRow
                 label='All Messages'
@@ -54,6 +57,7 @@ export function getSettingsPanel({ settings }) {
                 />}
             />
         </FormSection>
+
         <FormSection>
             <FormRow
                 label='Suppress @everyone and @here'
@@ -92,5 +96,5 @@ export function getSettingsPanel({ settings }) {
                 />}
             />
         </FormSection>
-    </FormSection>;
+    </View>;
 }
